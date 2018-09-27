@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#c4d7a8"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/tv_simple_service_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="简单那服务使用："
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_simple_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick="onClick"
+                android:text="启动简单的服务"
+                app:layout_constraintEnd_toStartOf="@+id/btn_simple_service_parameter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_simple_service_label" />
+
+            <Button
+                android:id="@+id/btn_close_simple_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick="onClick"
+                android:text="关闭服务"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_simple_service_parameter"
+                app:layout_constraintTop_toBottomOf="@id/tv_simple_service_label" />
+
+            <Button
+                android:id="@+id/btn_simple_service_parameter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick="onClick"
+                android:text="启动服务传入参数"
+                app:layout_constraintEnd_toStartOf="@+id/btn_close_simple_service"
+                app:layout_constraintStart_toEndOf="@+id/btn_simple_service"
+                app:layout_constraintTop_toBottomOf="@id/tv_simple_service_label" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
