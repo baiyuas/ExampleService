@@ -16,8 +16,7 @@ import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author: lpc
- * @description:
+ * @author: baiyu
  */
 public class SimpleBindService extends Service {
 

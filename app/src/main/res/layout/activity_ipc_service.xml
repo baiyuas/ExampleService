@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessengerServiceActivity">
+
+    <Button
+        android:id="@+id/btn_start_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onClick"
+        android:text="启动服务在另外一个进程"
+        app:layout_constraintEnd_toStartOf="@+id/btn_close_service"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_close_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="onClick"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="关闭远程服务"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_start_service"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_send_msg_to_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="35dp"
+        android:onClick="onClick"
+        android:layout_marginEnd="62dp"
+        android:layout_marginRight="62dp"
+        android:text="发送消息给服务"
+        app:layout_constraintEnd_toStartOf="@+id/btn_send_msg_to_client"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_start_service" />
+
+    <Button
+        android:id="@+id/btn_send_msg_to_client"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="35dp"
+        android:onClick="onClick"
+        android:layout_marginEnd="138dp"
+        android:layout_marginRight="138dp"
+        android:text="发送消息给客户的"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_send_msg_to_service"
+        app:layout_constraintTop_toBottomOf="@+id/btn_start_service" />
+</android.support.constraint.ConstraintLayout>

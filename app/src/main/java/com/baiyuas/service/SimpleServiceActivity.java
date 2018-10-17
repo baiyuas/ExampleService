@@ -13,7 +13,7 @@ import android.widget.TextView;
 /**
  * @author bauyu
  */
-public class MainActivity extends AppCompatActivity {
+public class SimpleServiceActivity extends AppCompatActivity {
 
     private SimpleBindService simpleBindService;
     private SimpleServiceConnection conn = new SimpleServiceConnection();
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_simple_service);
         tvCount = findViewById(R.id.tv_count);
     }
 

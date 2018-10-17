@@ -1,6 +1,7 @@
 # Service 学习示例
 
-主要战士在Service的基本使用
+主要战士在Service的基本使用,
+本示例主要学习博客[关于Android Service真正的完全详解，你需要知道的一切](https://blog.csdn.net/javazejian/article/details/52709857)
 
 
 ## Service生命周期

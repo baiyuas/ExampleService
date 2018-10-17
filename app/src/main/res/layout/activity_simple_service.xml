@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#c4d7a8"
-            tools:context=".MainActivity">
+            tools:context=".SimpleServiceActivity">
 
             <TextView
                 android:id="@+id/tv_simple_service_label"
@@ -65,7 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#a8c0d7"
-            tools:context=".MainActivity">
+            tools:context=".SimpleServiceActivity">
 
             <TextView
                 android:id="@+id/tv_simple_bind_service_label"

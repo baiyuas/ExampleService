@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".SimpleServiceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,15 +20,22 @@
         <service
             android:name=".SimpleService"
             android:exported="false" />
-
         <service
             android:name=".SimpleBindService"
             android:exported="false" />
-
         <service
-            android:name=".SimpleIpcService"
+            android:name=".MessengerService"
             android:exported="false"
             android:process=":ipc_service" />
+
+        <activity android:name=".MessengerServiceActivity" />
+        <activity android:name=".NavActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

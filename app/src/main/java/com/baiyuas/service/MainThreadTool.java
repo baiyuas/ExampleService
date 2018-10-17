@@ -5,8 +5,7 @@ import android.os.Handler;
 import android.os.Looper;
 
 /**
- * @author lpc
- * @description
+ * @author baiyu
  */
 public class MainThreadTool {
 
